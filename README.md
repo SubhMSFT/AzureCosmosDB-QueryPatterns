@@ -6,4 +6,4 @@ Get your hands dirty with 6 types of Query Patterns in Azure Cosmos DB Core SQL 
 - In the Container Id field, enter the value FoodCollection. 
 - In the Partition key field, enter the value /foodGroup.
 - In the Throughput field, enter the value 10000.
-- Use the NutritionData.json file and upload it via Portal (you may also use Azure Data Factory to upload it into Azure Cosmos DB). Follow steps as outlined [here](https://azurecosmosdb.github.io/labs/dotnet/labs/02-load_data_with_adf.html).
+- Download the NutritionData.zip file, unzip it, and then use the NutritionData.json file and upload it via Portal (you may also use Azure Data Factory to upload it into Azure Cosmos DB). Follow steps as outlined [here](https://azurecosmosdb.github.io/labs/dotnet/labs/02-load_data_with_adf.html).

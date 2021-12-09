@@ -4,8 +4,8 @@ using Microsoft.Azure.Cosmos;
 
 public class Program
 {
-    private static readonly string _endpointUri = "https://netsdkcoresql2021.documents.azure.com:443/";
-    private static readonly string _primaryKey = "R69RuwXTv7j2y7ZPf6UgHqnDDwjdxges01I6NTxtnDyh1ZmlYqCqFWHVTN7Grksu5RQUDE3Wttf3qk7XwRHyyg==";
+    private static readonly string _endpointUri = "https://<<youraccountname>>.documents.azure.com:443/";
+    private static readonly string _primaryKey = "<<paste your PRIMARY KEY here>>";
     private static readonly string _databaseId = "NutritionDatabase";
     private static readonly string _containerId = "FoodCollection";
 
@@ -99,7 +99,7 @@ public class Program
         await Console.Out.WriteLineAsync($"{beefResponse.RequestCharge} RU/s");
         Console.Out.WriteLine();
 
-        /* 1RU = 1 read of 1 Kb.
+        /* 1RU = 1 read of 1 Kb document.
             * 4 conditions are met: 1) Direct C, 2) point-read, 3) data does not have skew, 4) Default indexing policy = OFF.
         */
 

@@ -1,6 +1,13 @@
 # Azure CosmosDB - QueryPatterns
 Get your hands dirty with 6 types of Query Patterns in Azure Cosmos DB Core SQL API using .NET SDK.
 
+        // 1) full-table scan
+        // 2) point-read / point-lookup
+        // 3) in-partition query (simple)
+        // 4) in-partition query (multiple)
+        // 5) cross-partition query (aka fan-out query)
+        // 6) parallel cross-partition query
+
 # Steps to do:
 - First, create an Azure Cosmos DB account with Core SQL API.
 - In the Container Id field, enter the value FoodCollection. 

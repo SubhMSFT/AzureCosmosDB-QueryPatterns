@@ -110,9 +110,9 @@ public class Program
         // mandatory read > https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-query-container#in-partition-query
 
         // In-partition Query (simple):
-        string sqlA = "SELECT * FROM c WHERE c.foodGroup = 'Fats and Oils'";                                        // please note: /foodGroup is partitionKey for collection.
+        string sqlA = "SELECT * FROM c WHERE c.foodGroup = 'Sweets' AND c.id = 19293";            // please note: /foodGroup is partitionKey for collection.
         FeedIterator<Food> query2 = container.GetItemQueryIterator<Food>(sqlA);
-        FeedResponse<Food> queryResponse2 = await query.ReadNextAsync();
+        FeedResponse<Food> queryResponse2 = await query2.ReadNextAsync();
         await Console.Out.WriteLineAsync($"Query is: {sqlA}");
         await Console.Out.WriteLineAsync($"{queryResponse2.RequestCharge} RUs");
         Console.Out.WriteLine();

@@ -153,7 +153,7 @@ public class Program
         FeedIterator<Food> query6 = container.GetItemQueryIterator<Food>(fanout);
         FeedResponse<Food> queryResponse6 = await query.ReadNextAsync();
         await Console.Out.WriteLineAsync($"Query is: {fanout}");
-        await Console.Out.WriteLineAsync($"{queryResponse5.RequestCharge} RUs");
+        await Console.Out.WriteLineAsync($"{queryResponse6.RequestCharge} RUs");
         Console.WriteLine("Execution paused for verification. Press any key to continue to delete.");
         Console.ReadKey();
 
